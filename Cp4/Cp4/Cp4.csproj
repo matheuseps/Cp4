@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\interface\Class.cs" />
+    <Compile Remove="Properties\interface\Class1.cs" />
+    <Compile Remove="Properties\interface\Class2.cs" />
+    <Compile Remove="Properties\interface\Class3.cs" />
+    <Compile Remove="Properties\interface\IConversionRate - Copy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="properties\models\Cp4.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\NewFolder\" />
+  </ItemGroup>
+
+</Project>
